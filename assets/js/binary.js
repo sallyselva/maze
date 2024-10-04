@@ -1,5 +1,5 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.56/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.0.1","target":"arcade","targetVersion":"1.12.56","repo":"sallyselva/maze"}
-// total=1789718 new=6.45% cached=88.59% other=4.96%
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.56/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.0.2","target":"arcade","targetVersion":"1.12.56","repo":"sallyselva/maze"}
+// total=1790073 new=6.47% cached=88.57% other=4.96%
 (function (ectx) {
 'use strict';
 const runtime = ectx.runtime;
@@ -534,7 +534,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P47482(s) {
+function _main___P48870(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1146,7 +1146,7 @@ switch (step) {
     s.tmp_0 = scene_onOverlapTile__P26180_mk(s);
     s.tmp_0.arg0 = globals.Player___26200;
     s.tmp_0.arg1 = globals.stairLadder___27804;
-    s.tmp_0.arg2 = inline__P31150;
+    s.tmp_0.arg2 = inline__P48706;
     s.callLocIdx = 97; s.pc = 59; return s.tmp_0;
   case 59:
     r0 = s.retval;
@@ -1161,9 +1161,9 @@ switch (step) {
     s.callLocIdx = 99; s.pc = 60; return s.tmp_0;
   case 60:
     r0 = s.retval;
-    globals.mySprite___28266 = (r0);
+    globals.mySprite___48735 = (r0);
     s.tmp_0 = controller_moveSprite__P25887_mk(s);
-    s.tmp_0.arg0 = globals.mySprite___28266;
+    s.tmp_0.arg0 = globals.mySprite___48735;
     s.tmp_0.arg1 = 100;
     s.tmp_0.arg2 = 100;
     s.callLocIdx = 100; s.pc = 62; return s.tmp_0;
@@ -1180,13 +1180,13 @@ switch (step) {
   case 63:
     r0 = s.retval;
     s.tmp_0 = tiles_placeOnRandomTile__P26494_mk(s);
-    s.tmp_0.arg0 = globals.mySprite___28266;
+    s.tmp_0.arg0 = globals.mySprite___48735;
     s.tmp_0.arg1 = globals.stairWest___27799;
     s.callLocIdx = 103; s.pc = 65; return s.tmp_0;
   case 65:
     r0 = s.retval;
     s.tmp_0 = scene_cameraFollowSprite__P26610_mk(s);
-    s.tmp_0.arg0 = globals.mySprite___28266;
+    s.tmp_0.arg0 = globals.mySprite___48735;
     s.callLocIdx = 104; s.pc = 66; return s.tmp_0;
   case 66:
     r0 = s.retval;
@@ -1198,13 +1198,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P47482.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/arcade-text/main.ts","functionName":"<main>","argumentNames":[]}
-_main___P47482.continuations = [ 45,46,47,48 ]
+_main___P48870.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/arcade-text/main.ts","functionName":"<main>","argumentNames":[]}
+_main___P48870.continuations = [ 45,46,47,48 ]
 
-function _main___P47482_mk(s) {
+function _main___P48870_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P47482, depth: s.depth + 1,
+        parent: s, fn: _main___P48870, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -2155,7 +2155,7 @@ function myImages_inline__P31120_mk(s) {
 
 
 
-function inline__P31150(s) {
+function inline__P48706(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2184,57 +2184,68 @@ switch (step) {
   case 3:
     r0 = s.retval;
     s.tmp_0 = web_open__P28272_mk(s);
-    s.tmp_7 = info_score__P26289_mk(s);
-    s.callLocIdx = 93; s.pc = 5; return s.tmp_7;
+    s.tmp_9 = info_score__P26289_mk(s);
+    s.callLocIdx = 93; s.pc = 5; return s.tmp_9;
   case 5:
     r0 = s.retval;
+    s.tmp_8 = r0;
+    if ((s.tmp_8) && (s.tmp_8).vtable) {
+    setupResume(s, 6);
+    pxsim_String__stringConv(s.tmp_8);
+    checkResumeConsumed();
+    return;
+    } else { s.retval = (s.tmp_8) + ""; }
+  case 6:
+    r0 = s.retval;
+    s.tmp_7 = r0;
+    r0 = pxsim_String__concat("https://115.111.238.147:889/api/ECommReflection?playername=", s.tmp_7);
     s.tmp_6 = r0;
     if ((s.tmp_6) && (s.tmp_6).vtable) {
-    setupResume(s, 6);
+    setupResume(s, 7);
     pxsim_String__stringConv(s.tmp_6);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_6) + ""; }
-  case 6:
+  case 7:
     r0 = s.retval;
     s.tmp_5 = r0;
-    r0 = pxsim_String__concat("https://115.111.238.147:889/api/ECommReflection?playername=", s.tmp_5);
+    r0 = pxsim_String__concat(s.tmp_5, "&score=");
     s.tmp_4 = r0;
     if ((s.tmp_4) && (s.tmp_4).vtable) {
-    setupResume(s, 7);
+    setupResume(s, 8);
     pxsim_String__stringConv(s.tmp_4);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_4) + ""; }
-  case 7:
+  case 8:
     r0 = s.retval;
     s.tmp_3 = r0;
-    r0 = pxsim_String__concat(s.tmp_3, "&score=");
+    s.tmp_12 = info_score__P26289_mk(s);
+    s.callLocIdx = 94; s.pc = 9; return s.tmp_12;
+  case 9:
+    r0 = s.retval;
+    s.tmp_11 = r0;
+    if ((s.tmp_11) && (s.tmp_11).vtable) {
+    setupResume(s, 10);
+    pxsim_String__stringConv(s.tmp_11);
+    checkResumeConsumed();
+    return;
+    } else { s.retval = (s.tmp_11) + ""; }
+  case 10:
+    r0 = s.retval;
+    s.tmp_10 = r0;
+    r0 = pxsim_String__concat(s.tmp_3, s.tmp_10);
     s.tmp_2 = r0;
     if ((s.tmp_2) && (s.tmp_2).vtable) {
-    setupResume(s, 8);
+    setupResume(s, 11);
     pxsim_String__stringConv(s.tmp_2);
     checkResumeConsumed();
     return;
     } else { s.retval = (s.tmp_2) + ""; }
-  case 8:
+  case 11:
     r0 = s.retval;
     s.tmp_1 = r0;
-    s.tmp_10 = info_score__P26289_mk(s);
-    s.callLocIdx = 94; s.pc = 9; return s.tmp_10;
-  case 9:
-    r0 = s.retval;
-    s.tmp_9 = r0;
-    if ((s.tmp_9) && (s.tmp_9).vtable) {
-    setupResume(s, 10);
-    pxsim_String__stringConv(s.tmp_9);
-    checkResumeConsumed();
-    return;
-    } else { s.retval = (s.tmp_9) + ""; }
-  case 10:
-    r0 = s.retval;
-    s.tmp_8 = r0;
-    r0 = pxsim_String__concat(s.tmp_1, s.tmp_8);
+    r0 = pxsim_String__concat(s.tmp_1, "&gname=Maze");
     s.tmp_0.arg0 = r0;
     s.callLocIdx = 95; s.pc = 4; return s.tmp_0;
   case 4:
@@ -2242,19 +2253,19 @@ switch (step) {
     s.tmp_0 = game_over__P26732_mk(s);
     s.tmp_0.arg0 = true;
     s.tmp_0.arg1 = undefined;
-    s.callLocIdx = 96; s.pc = 11; return s.tmp_0;
-  case 11:
+    s.callLocIdx = 96; s.pc = 12; return s.tmp_0;
+  case 12:
     r0 = s.retval;
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-inline__P31150.info = {"start":68,"length":230,"line":0,"column":68,"endLine":5,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","location"]}
+inline__P48706.info = {"start":68,"length":246,"line":0,"column":68,"endLine":5,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","location"]}
 
-function inline__P31150_mk(s) {
+function inline__P48706_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P31150, depth: s.depth + 1,
+        parent: s, fn: inline__P48706, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -2267,6 +2278,8 @@ function inline__P31150_mk(s) {
   tmp_8: undefined,
   tmp_9: undefined,
   tmp_10: undefined,
+  tmp_11: undefined,
+  tmp_12: undefined,
   arg0: undefined,
   arg1: undefined,
 } }
@@ -60344,7 +60357,7 @@ const sprites_BaseSpriteSayRenderer__C25979_VT = mkVTable({
   },
 });
 
-const breakpoints = setupDebugger(1, ["transparency16___28268","tile1___28269","mySprite___28266","CHANNEL___31126"])
+const breakpoints = setupDebugger(1, ["transparency16___28268","tile1___28269","mySprite___48735","CHANNEL___31126"])
 
-return _main___P47482
+return _main___P48870
 })
