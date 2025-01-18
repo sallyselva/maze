@@ -1,5 +1,5 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.58/---simulator","cdnUrl":"https://cdn.makecode.com","version":"0.0.12","target":"arcade","targetVersion":"1.12.58","repo":"sallyselva/maze"}
-// total=1781964 new=6.42% cached=88.62% other=4.96%
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.58/---simulator","cdnUrl":"https://cdn.makecode.com","version":"0.0.13","target":"arcade","targetVersion":"1.12.58","repo":"sallyselva/maze"}
+// total=1781954 new=6.42% cached=88.62% other=4.96%
 (function (ectx) {
 'use strict';
 const runtime = ectx.runtime;
@@ -27,7 +27,7 @@ const __this = runtime;
 const pxtrt = pxsim.pxtrt;
 let yieldSteps = 1;
 ectx.setupYield(function() { yieldSteps = 100; })
-pxsim.setTitle("Maze_11");
+pxsim.setTitle("Maze_13");
 pxsim.setConfigData({
  "37": 160,
  "38": 120
@@ -534,7 +534,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P25545(s) {
+function _main___P23681(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1144,13 +1144,13 @@ switch (step) {
     s.tmp_0 = scene_onOverlapTile__P2461_mk(s);
     s.tmp_0.arg0 = globals.Player___2481;
     s.tmp_0.arg1 = globals.stairLadder___4085;
-    s.tmp_0.arg2 = inline__P25052;
+    s.tmp_0.arg2 = inline__P7425;
     s.callLocIdx = 97; s.pc = 59; return s.tmp_0;
   case 59:
     r0 = s.retval;
     s.tmp_0 = sprites_create__P2276_mk(s);
     s.tmp_1 = helpers_getImageByName__P3337_mk(s);
-    s.tmp_1.arg0 = "myImage4";
+    s.tmp_1.arg0 = "myImage5";
     s.callLocIdx = 98; s.pc = 61; return s.tmp_1;
   case 61:
     r0 = s.retval;
@@ -1159,9 +1159,9 @@ switch (step) {
     s.callLocIdx = 99; s.pc = 60; return s.tmp_0;
   case 60:
     r0 = s.retval;
-    globals.mySprite___25081 = (r0);
+    globals.mySprite___4547 = (r0);
     s.tmp_0 = controller_moveSprite__P2168_mk(s);
-    s.tmp_0.arg0 = globals.mySprite___25081;
+    s.tmp_0.arg0 = globals.mySprite___4547;
     s.tmp_0.arg1 = 100;
     s.tmp_0.arg2 = 100;
     s.callLocIdx = 100; s.pc = 62; return s.tmp_0;
@@ -1178,13 +1178,13 @@ switch (step) {
   case 63:
     r0 = s.retval;
     s.tmp_0 = tiles_placeOnRandomTile__P2775_mk(s);
-    s.tmp_0.arg0 = globals.mySprite___25081;
+    s.tmp_0.arg0 = globals.mySprite___4547;
     s.tmp_0.arg1 = globals.stairWest___4080;
     s.callLocIdx = 103; s.pc = 65; return s.tmp_0;
   case 65:
     r0 = s.retval;
     s.tmp_0 = scene_cameraFollowSprite__P2891_mk(s);
-    s.tmp_0.arg0 = globals.mySprite___25081;
+    s.tmp_0.arg0 = globals.mySprite___4547;
     s.callLocIdx = 104; s.pc = 66; return s.tmp_0;
   case 66:
     r0 = s.retval;
@@ -1196,13 +1196,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P25545.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/arcade-text/main.ts","functionName":"<main>","argumentNames":[]}
-_main___P25545.continuations = [ 45,46,47,48 ]
+_main___P23681.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/arcade-text/main.ts","functionName":"<main>","argumentNames":[]}
+_main___P23681.continuations = [ 45,46,47,48 ]
 
-function _main___P25545_mk(s) {
+function _main___P23681_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P25545, depth: s.depth + 1,
+        parent: s, fn: _main___P23681, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -2144,7 +2144,7 @@ function myImages_inline__P7395_mk(s) {
 
 
 
-function inline__P25052(s) {
+function inline__P7425(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -2249,12 +2249,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-inline__P25052.info = {"start":68,"length":238,"line":0,"column":68,"endLine":5,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","location"]}
+inline__P7425.info = {"start":68,"length":238,"line":0,"column":68,"endLine":5,"endColumn":1,"fileName":"main.ts","functionName":"inline","argumentNames":["sprite","location"]}
 
-function inline__P25052_mk(s) {
+function inline__P7425_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: inline__P25052, depth: s.depth + 1,
+        parent: s, fn: inline__P7425, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -60346,7 +60346,7 @@ const sprites_BaseSpriteSayRenderer__C2260_VT = mkVTable({
   },
 });
 
-const breakpoints = setupDebugger(1, ["transparency16___4549","mySprite___25081","CHANNEL___7401"])
+const breakpoints = setupDebugger(1, ["transparency16___4549","mySprite___4547","CHANNEL___7401"])
 
-return _main___P25545
+return _main___P23681
 })
