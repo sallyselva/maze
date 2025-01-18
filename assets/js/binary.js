@@ -1,4 +1,4 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.58/---simulator","cdnUrl":"https://cdn.makecode.com","version":"0.0.8","target":"arcade","targetVersion":"1.12.58","repo":"sallyselva/maze"}
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.58/---simulator","cdnUrl":"https://cdn.makecode.com","version":"0.0.9","target":"arcade","targetVersion":"1.12.58","repo":"sallyselva/maze"}
 // total=1781963 new=6.42% cached=88.62% other=4.96%
 (function (ectx) {
 'use strict';
@@ -27,7 +27,7 @@ const __this = runtime;
 const pxtrt = pxsim.pxtrt;
 let yieldSteps = 1;
 ectx.setupYield(function() { yieldSteps = 100; })
-pxsim.setTitle("Maze_7");
+pxsim.setTitle("Maze_6");
 pxsim.setConfigData({
  "37": 160,
  "38": 120
@@ -534,7 +534,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P24096(s) {
+function _main___P24378(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1196,13 +1196,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P24096.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/arcade-text/main.ts","functionName":"<main>","argumentNames":[]}
-_main___P24096.continuations = [ 45,46,47,48 ]
+_main___P24378.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"pxt_modules/arcade-text/main.ts","functionName":"<main>","argumentNames":[]}
+_main___P24378.continuations = [ 45,46,47,48 ]
 
-function _main___P24096_mk(s) {
+function _main___P24378_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P24096, depth: s.depth + 1,
+        parent: s, fn: _main___P24378, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -60348,5 +60348,5 @@ const sprites_BaseSpriteSayRenderer__C2260_VT = mkVTable({
 
 const breakpoints = setupDebugger(1, ["transparency16___4549","mySprite___23914","CHANNEL___7401"])
 
-return _main___P24096
+return _main___P24378
 })
